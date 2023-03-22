@@ -13,4 +13,6 @@ router.put("/:id", employee.editEmployee);
 
 router.delete("/:id", employee.deleteEmployee);
 
+router.delete("/", employee.deleteEmployees);
+
 module.exports = router;

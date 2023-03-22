@@ -35,4 +35,13 @@ employeeCtrl.deleteEmployee = async (req, res, next) => {
   res.json({ status: "Employee Deleted" });
 };
 
+// - - - - - - - - - - Función 5 >> ELIMINAR EMPLEADOS - - - - - - - - - -
+
+employeeCtrl.deleteEmployees = async (req, res, next) => {
+  await Employee.deleteMany();
+  res.json({ status: "Employees Deleted" });
+};
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 module.exports = employeeCtrl;
